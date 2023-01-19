@@ -1,13 +1,9 @@
-const modeText = document.querySelector(".mode-text");
-
 function toggleDarkMode() {
-  const darkModeSwitch = document.getElementById("dark-mode-switch");
-  const body = document.querySelector("body");
-  if (darkModeSwitch.checked) {
-    body.classList.add("dark-mode");
-    modeText.innerText = "Dark Mode";
+  var body = document.getElementsByTagName("BODY")[0];
+  var currentClass = body.className;
+  if (currentClass === "dark-mode") {
+    body.className = "light-mode";
   } else {
-    body.classList.remove("dark-mode");
-    modeText.innerText = "Light Mode";
+    body.className = "dark-mode";
   }
 }
