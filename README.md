@@ -1,1 +1,2 @@
-# inder.github.io
+inderrana.com
+Personal website
